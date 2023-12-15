@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head></head>
+<body>
+<div id="navbar">
+  <a style="font-weight: bold ; font-size: 30px"  href="index.html" onclick="viewHome()">HRM</a>
+  <a id="view-department" href="#" onclick="viewDeparment()">Quản lý Phòng ban</a>
+  <a id="view-account" href="#" onclick="viewAccount()">Quản lý Nhân viên</a>
+  <a style="float: right">Hello
+    <span id="user-full-name" ></span>
+    <a id="logout" href="login.html" style="float: right" onclick="logout()">Logout</a>
+  </a>
+</div>
+
+<script>
+var fullname = storage.getItem("FULL_NAME");
+  $('#user-full-name').append(`<span> ${fullname} </span>`);
+</script>
+</body>
+</html>
+
